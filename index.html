@@ -3,119 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <title>Lista nascita</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      padding: 40px;
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-image: url("https://i.imgur.com/4Xn8c3B.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
+
+    .overlay {
+      background: rgba(255, 255, 255, 0.9);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
     .box {
-      background: white;
-      max-width: 700px;
+      max-width: 900px;
       margin: auto;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.25);
       text-align: center;
     }
-    h1, h2 {
+
+    h1 {
+      font-size: 34px;
+      color: #3b3b3b;
+    }
+
+    h2 {
+      margin-top: 40px;
       color: #444;
     }
+
     p {
-      color: #666;
-      font-size: 16px;
-      line-height: 1.5;
+      color: #555;
+      font-size: 17px;
+      line-height: 1.6;
     }
+
     a.button {
       display: inline-block;
       margin: 25px 0;
-      padding: 15px 25px;
+      padding: 16px 34px;
       background: #0070ba;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-size: 18px;
     }
+
     a.button:hover {
       background: #005ea6;
     }
+
     .items {
-      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
       margin-top: 30px;
     }
+
     .item {
+      background: #fafafa;
+      border-radius: 10px;
       padding: 15px;
-      border-bottom: 1px solid #eee;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
     .item a {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
       color: #0070ba;
       text-decoration: none;
-      font-weight: bold;
     }
+
+    .address {
+      background: #f4f4f4;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
     .note {
       font-size: 14px;
-      color: #888;
-      margin-top: 20px;
+      color: #777;
+      margin-top: 30px;
     }
   </style>
 </head>
+
 <body>
+  <div class="overlay">
+    <div class="box">
 
-  <div class="box">
-    <h1>👶 Lista nascita</h1>
+      <h1>👶 Una nuova magia sta per arrivare</h1>
 
-    <p>
-      Stiamo preparando tutto con calma e amore.<br>
-      Se vuoi farci un regalo, puoi scegliere liberamente come farlo 💛
-    </p>
+      <p>
+        Come la notte in cui Hagrid lasciò Harry davanti a Privet Drive,<br>
+        anche noi stiamo iniziando una nuova, meravigliosa avventura ✨<br><br>
+        Se desideri accompagnarci in questo viaggio, puoi scegliere il modo che preferisci.
+      </p>
 
-    <h2>🎁 Regalo libero</h2>
+      <h2>🎁 Regalo magico (libero)</h2>
 
-    <p>
-      Puoi contribuire con un importo a tua scelta.<br>
-      Useremo il denaro per ciò che ci servirà davvero, quando sarà il momento.
-    </p>
+      <p>
+        Puoi contribuire con un importo a tua scelta.<br>
+        Useremo il dono per ciò che ci servirà davvero, al momento giusto 🪄
+      </p>
 
-    <a class="button" href="LINK_PAYPAL" target="_blank">
-      Fai un regalo su PayPal 💝
-    </a>
+      <a class="button" href="https://paypal.me/nascitagrifondoro" target="_blank">
+        Fai un regalo su PayPal 💝
+      </a>
 
-    <h2>🍼 Oggetti suggeriti</h2>
+      <h2>🍼 Oggetti del mondo babbano</h2>
 
-    <p>
-      Qui trovi alcuni oggetti che potrebbero servirci.<br>
-      Sentiti libero/a di usarli solo come ispirazione.
-    </p>
+      <p>
+        Per chi preferisce un regalo concreto, ecco alcuni oggetti utili per l’inizio dell’avventura.
+      </p>
 
-    <div class="items">
-      <div class="item">
-        🛒 <a href="https://www.amazon.it/INSERISCI_LINK" target="_blank">
-          Passeggino
-        </a>
+      <div class="items">
+        <div class="item">
+          <img src="https://m.media-amazon.com/images/I/71yq2G9Z1FL._AC_SL1500_.jpg" alt="Passeggino">
+          <a href="https://www.amazon.it/Passeggino-Universale-Vihir-Accessori-Passeggini/dp/B0CYZNP988/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=14SB25C1AMN3N&dib=eyJ2IjoiMSJ9.wXoZtL9P91xr7V5HSy2XE875tH1TIKdrYq-40Zx0TZkqvdYZSvlUkvHo_RWRGpsVHCxn3oMu0F76Xue3DIOd-70jESh5jxxrhgztEzxTILpdr1IhFmH5tn-ys9qU-Xgqs6sFuwmegHnqYo-9BAqMrpcqHkrWEhrkn1UjO-OlYEuwVjd5t4nR6fpMBV6b9CTWnXQHRzLK3JQBb9U6WSkeF0viA_KH6DNv2SMTfR72ptosndSnTavKgQEo1_Ha5R82LLP3NL_OSnimE3VPAphl7zXGNHBbWx7HVA7ZMSKdxXM.l5iZmBMFyBRqHAqVYp33SrNXdHPrZ6o7_H51MKR57mw&dib_tag=se&keywords=alzatina+per+passeggino+per+secondo+figlio&qid=1770298316&sprefix=alzatina+per+passeggino+per+secondo+figli%2Caps%2C253&sr=8-2" target="_blank">Passeggino</a>
+        </div>
+
+        <div class="item">
+          <img src="https://m.media-amazon.com/images/I/71XnH9zF6KL._AC_SL1500_.jpg" alt="Seggiolino auto">
+          <a href="https://www.amazon.it/Maxi-Cosi-Seggiolino-Reclinabile-Regolabile-Protection/dp/B0BVRSBBJB/ref=sr_1_8?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1DIP4GD5QICP9&dib=eyJ2IjoiMSJ9.CQPq0c3pymRq3ISMnwrOPA7JmfAklzmiwq_SOKY--82HEgQ85b0sBrlHXvAjbyh2Nvx-uUhlAdGmAlcQ5DfWp5-R8zukrKRXto7XoBqOqlP4yRECjneZajIjjlVSoLc_W8MIVS5j0lOGhNmTHu8RWWwBnrMeI1khhdilWweRnCkjK_jkePGZGt8YT2QKSgyuIdHwIr4xTAx-B6opUd7GgXxxj1BdZiFLG5zwYwgSs-SbmpZ_mqOw6Y0dUscFSkFEES2xzfXkj2kqtriARg7-D3oDDC_wRx9DrP1918EiJIw.MKcxm6nwFKuVFKLSazZUZxUsd7ESOKf9rWQgZwB2bdU&dib_tag=se&keywords=seggiolino%2Bauto%2Bisofix%2BECE%2BR129%2B7%2Banni&qid=1770297976&refinements=p_123%3A238074&rnid=1836500031&sprefix=seggiolino%2Bauto%2Bisofix%2Bece%2Br129%2B7%2Banni%2Caps%2C237&sr=8-8&th=1" target="_blank">Seggiolino auto</a>
+        </div>
+
+        <div class="item">
+          <img src="https://m.media-amazon.com/images/I/61P0V8sR+YL._AC_SL1500_.jpg" alt="Lettino">
+          <a href="https://www.amazon.it/Chicco-Sostenibile-Compatibile-Inclinabile-Circolazione/dp/B0BMM7S59J/ref=sr_1_2_sspa?crid=WRZWEOOQNI3X&dib=eyJ2IjoiMSJ9.GMMnYiycmYVFD_6Kj5_WqCPuHsa_NuOWk1mtH0gOl1X6zy-zf_NX9XqUneRC5T7c8dZM1G_zEh_p4vAuuw4kOjnCLvID7nkZGIvZuokvL046AmYE11m7psyGFJaL0N9i558aVcKPCRQlFbtSsfU8u8yH_ndttNL7gCTVk5zvqmCi26Lx2EShELIvSoMhUkBCKICbbmKHz60KYjitrzQSNhFUIuTsFVRKHPjuKV9DPiW-ARLdq1fP5M7LZ1JKnOzpSQfDAmfmEv7o1NIewuz5_cPPob7iPJI9Mrd7i_bmYec.gZgdJRBJLQq-kaajtPjC3Ni9X5ZbsVI8QHgInZiIvzo&dib_tag=se&keywords=lettino+neonato&qid=1770298570&sprefix=lettino%2Caps%2C268&sr=8-2-spons&aref=SZRBLw0Nsj&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">Lettino / Culla</a>
+        </div>
       </div>
 
-      <div class="item">
-        🛒 <a href="https://www.amazon.it/INSERISCI_LINK" target="_blank">
-          Seggiolino auto
-        </a>
+      <h2>📦 Dove spedire il regalo</h2>
+
+      <div class="address">
+        Via del Casone 5<br>
+        50124 Firenze (FI)<br>
+        Campanello: <strong>Manetti Gimignani</strong>
       </div>
 
-      <div class="item">
-        🛒 <a href="https://www.amazon.it/INSERISCI_LINK" target="_blank">
-          Fasciatoio
-        </a>
-      </div>
+      <p class="note">
+        Il regalo libero resta sempre l’opzione più semplice e flessibile 💛
+      </p>
+
+      <p style="margin-top:35px;">
+        Grazie di cuore per essere parte della nostra storia ✨
+      </p>
+
     </div>
-
-    <p class="note">
-      Nota: gli oggetti sono solo indicativi.<br>
-      Il regalo libero su PayPal è sempre la soluzione più semplice 💛
-    </p>
-
-    <p style="margin-top:30px;">
-      Grazie di cuore ❤️
-    </p>
   </div>
-
 </body>
 </html>
