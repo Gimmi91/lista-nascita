@@ -71,15 +71,16 @@ body {
     }
 
     .dialogo {
-      text-align: left;
-      background: #f6f6f6;
-      padding: 25px;
-      border-radius: 12px;
-      font-size: 15px;
-      line-height: 1.6;
-      margin: 30px 0;
-      white-space: pre-line;
-    }
+  text-align: left;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 30px 0;
+  white-space: pre-line;
+}
+
 
     .items {
       display: grid;
@@ -132,9 +133,9 @@ a.button:hover {
 
 
     .address {
-      background: #f1f1f1;
-      padding: 20px;
-      border-radius: 12px;
+      background: trasparent;
+      padding: 0;
+      border-radius: 0;
       margin-top: 20px;
       font-size: 16px;
     }
@@ -167,7 +168,7 @@ a, .item a {
 
       <h1>👶 Una nuova magia sta per arrivare</h1>
 
-      <p>
+      <div class="dialogo">
 McGRANITT: E il bimbo?
 SILENTE: Hagrid lo porterà qui.
 McGRANITT: Lei trova saggio affidare ad Hagrid un compito importante come questo?
@@ -179,7 +180,7 @@ McGRANITT: Albus... Crede davvero che sia il caso di lasciarlo con queste person
 SILENTE: Sono i soli genitori che ha.
 McGRANITT: Questo piccino diventerà famoso. Non ci sarà bambino nel nostro mondo che non conoscerà il suo nome.
 SILENTE: Esatto. Sarà molto meglio per lui crescere lontano da tutto questo. Finché non sarà pronto. Via, via Hagrid... Questo non è un vero addio, dopo tutto. Buona fortuna... Ignotus.
-     </p>
+      </div>
 
       <p>
         Se desideri accompagnarci in questo viaggio, puoi scegliere il modo che preferisci.
@@ -224,11 +225,11 @@ SILENTE: Esatto. Sarà molto meglio per lui crescere lontano da tutto questo. Fi
 
       <h2>📦 Dove spedire il regalo</h2>
 
-      <p style="margin-top:40px;">
+      <div class="address">
         Via di Soffiano 87<br>
         50143 Firenze (FI)<br>
         Campanello: <strong>Manetti Gimignani</strong>
-      </p>
+      </div>
 
 
       <p style="margin-top:40px;">
@@ -239,6 +240,7 @@ SILENTE: Esatto. Sarà molto meglio per lui crescere lontano da tutto questo. Fi
   </div>
 </body>
 </html>
+
 
 
 
